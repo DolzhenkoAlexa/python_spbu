@@ -1,0 +1,23 @@
+name: HeapSort CI
+
+on: [push, pull_request] 
+
+jobs:
+  test:
+    name: HeapSort tests
+    runs-on: ubuntu
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4  
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4 
+      with:
+        python-version: '3.13' 
+        
+    - name: Run tests
+      run: python test.py  
+      
+    - name: Test completion
+      run: echo "All tests are successfully passed"
