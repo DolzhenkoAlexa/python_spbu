@@ -1,23 +1,24 @@
-name: Run Tests
+name: Run Heap Sort Tests
 
 on: [push, pull_request]
 
 jobs:
   test:
     runs-on: ubuntu-latest
-
+    
     steps:
     - uses: actions/checkout@v3
-
+    
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.9'
-
+        python-version: '3.13'
+    
     - name: Install pytest
       run: pip install pytest
-
+    
     - name: Run tests
-      run: python -m pytest heapsort_tests.py -v
-
+      run: |
+        cd src/hw_pytest/
+        python -m pytest heapsort_tests.py -v
 
