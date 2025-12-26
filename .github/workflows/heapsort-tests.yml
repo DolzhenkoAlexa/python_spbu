@@ -20,6 +20,6 @@ jobs:
     - name: Run tests
       run: |
         cd ..
-        cd /src/hw_heapsort/tests
+        cd src/hw_heapsort/tests
         python -m pytest tests_heapsort.py -v
 
