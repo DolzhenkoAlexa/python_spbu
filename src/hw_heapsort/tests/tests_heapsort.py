@@ -1,6 +1,5 @@
 import pytest
-from heapsort import heap_sort
-from other_sorts import bubble_sort, insertion_sort
+from ../sorts.py import heap_sort, bubble_sort, insertion_sort
 
 # обычные unit тесты и крайние случаи
 @pytest.mark.empty
