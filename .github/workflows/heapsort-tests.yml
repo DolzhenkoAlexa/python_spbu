@@ -19,5 +19,5 @@ jobs:
     
     - name: Run tests
       run: |
-        python -m pytest tests_heapsort.py -v
+        python -m pytest tests/tests_heapsort.py -v
 
