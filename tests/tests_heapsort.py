@@ -1,5 +1,5 @@
 import pytest
-from src/hw_heapsort/sorts.py import heap_sort, bubble_sort, insertion_sort
+from ..src.hw_heapsort.sorts.py import heap_sort, bubble_sort, insertion_sort
 
 # обычные unit тесты и крайние случаи
 @pytest.mark.empty
