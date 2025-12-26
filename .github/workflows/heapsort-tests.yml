@@ -19,6 +19,5 @@ jobs:
     
     - name: Run tests
       run: |
-        cd src/hw_pytest/
-        python -m pytest heapsort_tests.py -v
+        python -m pytest tests_heapsort.py -v
 
